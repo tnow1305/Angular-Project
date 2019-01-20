@@ -1,0 +1,38 @@
+<section class="contact-component">
+
+  <div class="contact-form">
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="contact-form__required">
+        <div class="form-group">
+          <input [(ngModel)]="nameInput" [ngModelOptions]="{standalone: true}"
+                 id="name"
+                 type="text"
+                 placeholder="Name*"
+                 class="contact-input">
+          <span class="contact-input__error">{{ errorName }}</span>
+        </div>
+
+        <div class="form-group">
+          <input [(ngModel)]="emailInput" [ngModelOptions]="{standalone: true}"
+                 id="email"
+                 type="text"
+                 placeholder="E-mail*"
+                 class="contact-input">
+          <span class="contact-input__error">{{ errorEmail }}</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="contact-form__message">
+          <input ngModel #message="ngModel" name="message" id="message" type="text" placeholder="Message"
+                 class="contact-input">
+        </div>
+      </div>
+
+      <div class="contact-form__send-button">
+        <button class="contact-form__button" (click)="formValidation()">SEND</button>
+      </div>
+    </form>
+  </div>
+
+</section>

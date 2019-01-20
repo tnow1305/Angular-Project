@@ -1,0 +1,19 @@
+@import '/../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  font-family: 'roboto', 'arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #343a40;
+}
+
+a.active {
+  color: #ab1919;
+  border-bottom: 2px solid #ab1919;
+}

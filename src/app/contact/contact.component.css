@@ -1,0 +1,79 @@
+.contact-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.contact-form {
+  height: 100%;
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 3px 4px 4px #d3d3d3;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__required {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contact-form__message {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.contact-input {
+  width: 250px;
+  border: none;
+  color: #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 10px;
+  outline: none;
+  padding-top: 20px;
+}
+
+.contact-input__error {
+  color: red;
+}
+
+::placeholder {
+  color: #d3d3d3;
+}
+
+.contact-form__send-button {
+  padding: 20px 74px;
+  float: right;
+}
+
+.contact-form__button {
+  width: 90px;
+  height: 30px;
+  border: none;
+  background-color: #3486f7;
+  color: #ffffff;
+  border-radius: 2px;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+
+.contact-form__button:hover {
+  background-color: #ab1919;
+  cursor: pointer;
+}
+
+@media (max-width: 374px) {
+  .contact-form__send-button {
+    padding: 20px 36px;
+  }
+}
